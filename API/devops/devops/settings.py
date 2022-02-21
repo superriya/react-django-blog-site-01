@@ -1,15 +1,9 @@
 from pathlib import Path
-import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env()
-environ.Env.read_env()
-
-SECRET_KEY = env('SECRET_KEY')
-
-
+SECRET_KEY="sldfjhpa98uygaho8we4hglkj"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -30,6 +24,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'api',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -121,4 +116,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000',
 ]
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 

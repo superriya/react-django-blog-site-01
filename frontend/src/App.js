@@ -12,10 +12,10 @@ function App() {
 
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-4">
+          <div className="col-lg-4 col-md-4" style={{background: "#c20430"}}>
           <LeftSideBlock />
           </div>
-          <div className="col-lg-8 col-md-8 scroll-col">
+          <div className="col-lg-8 col-md-8 scroll-col" style={{padding: "0px 50px"}}>
           <RightSideBlock />
           </div>  
         </div>
